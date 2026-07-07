@@ -1,0 +1,93 @@
+{% extends "base.html" %} {% block content %}
+
+<section class="hero">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h1 class="text-primary">AI Powered Credit Card Approval Prediction</h1>
+
+      <p class="mt-4">
+        Predict whether a customer is eligible for a credit card using Machine
+        Learning. The model analyzes applicant information and predicts approval
+        within seconds.
+      </p>
+
+      <a href="/predict" class="btn btn-primary btn-lg mt-3"> Predict Now </a>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        class="img-fluid"
+        width="420"
+      />
+    </div>
+  </div>
+</section>
+
+<hr />
+
+<h2 class="text-center text-primary mb-5">Why Use This System?</h2>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card shadow p-4 text-center">
+      <h1>⚡</h1>
+
+      <h4>Instant Prediction</h4>
+
+      <p>Predict credit card approval in seconds.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow p-4 text-center">
+      <h1>🤖</h1>
+
+      <h4>Machine Learning</h4>
+
+      <p>Random Forest model trained with 85.5% accuracy.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow p-4 text-center">
+      <h1>🔒</h1>
+
+      <h4>Secure</h4>
+
+      <p>User information is processed securely.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5" />
+
+<h2 class="text-center text-primary">Project Workflow</h2>
+
+<div class="row mt-5 text-center">
+  <div class="col-md-3">
+    <h1>1️⃣</h1>
+
+    Enter Details
+  </div>
+
+  <div class="col-md-3">
+    <h1>2️⃣</h1>
+
+    Preprocessing
+  </div>
+
+  <div class="col-md-3">
+    <h1>3️⃣</h1>
+
+    ML Prediction
+  </div>
+
+  <div class="col-md-3">
+    <h1>4️⃣</h1>
+
+    Approval Result
+  </div>
+</div>
+
+{% endblock %}

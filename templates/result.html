@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container mt-5">
+  <div class="card shadow-lg p-5 text-center">
+    {% if result == "Approved" %}
+
+    <div style="font-size: 80px">✅</div>
+
+    <h1 class="text-success fw-bold">Credit Card Approved</h1>
+
+    <h3 class="mt-3">Confidence: {{ confidence }}%</h3>
+
+    <p class="lead mt-4">
+      Congratulations! Based on the information provided, the Machine Learning
+      model predicts that the applicant is eligible for credit card approval.
+    </p>
+
+    {% else %}
+
+    <div style="font-size: 80px">❌</div>
+
+    <h1 class="text-danger fw-bold">Credit Card Rejected</h1>
+
+    <h3 class="mt-3">Confidence: {{ confidence }}%</h3>
+
+    <p class="lead mt-4">
+      Based on the applicant's details, the Machine Learning model predicts that
+      the application is likely to be rejected.
+    </p>
+
+    {% endif %}
+
+    <hr />
+
+    <a href="/predict" class="btn btn-primary btn-lg mt-3">
+      Predict Another Application
+    </a>
+  </div>
+</div>
+
+{% endblock %}

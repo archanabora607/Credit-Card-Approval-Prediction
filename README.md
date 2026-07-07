@@ -116,7 +116,7 @@ Credit-Card-Approval-Prediction/
 Clone the repository
 
 ```bash
-git clone https://github.com/YourUsername/Credit-Card-Approval-Prediction.git
+git clone https://github.com/archanabora607/Credit-Card-Approval-Prediction.git
 ```
 
 Go to project folder
